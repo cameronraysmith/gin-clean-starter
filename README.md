@@ -16,9 +16,7 @@
 |  | Feature | Why It Matters |
 |---|---|---|
 | 🏛️ **Clean Architecture** | Domain/UseCase/Infra layers | Easy testing & maintenance |
-| ⚡ **Race-Safe Reservations** | DB-level conflict prevention | No double-bookings ever |  
 | 🔄 **True Idempotency** | Request deduplication + result caching | API clients can retry safely |
-| 🎫 **Flexible Coupons** | Fixed amount or percentage discounts | Business requirement ready |
 | 🔐 **JWT + RBAC** | Role-based access (viewer/operator/admin) | Production auth patterns |
 
 ---
@@ -140,5 +138,3 @@ Built for **booking/reservation systems** where race conditions and data consist
 * **Request duplication** → Handled with proper idempotency (not just dedup)  
 * **Domain validation** → Clean separation from HTTP concerns
 * **Role-based access** → JWT with viewer/operator/admin levels
-
-Check `.docs/` folder for detailed requirements and API specifications.
