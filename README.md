@@ -1,6 +1,6 @@
 # Gin Clean Starter
 
-🏗️ **Clean Architecture + CQRS + DDD + UoW (using Golang/Gin)** — Production-ready booking system template with **idempotent APIs** & **race-safe reservations**
+**Clean Architecture + CQRS + DDD + UoW (using Golang/Gin)** — Production-ready booking system template with **idempotent APIs** & **race-safe reservations**
 
 <p align="center">
   <img src="https://img.shields.io/badge/Go-1.24+-blue" />
@@ -11,17 +11,15 @@
 
 ---
 
-## 🎯 What's Inside
+## What's Inside
 
-|  | Feature | Why It Matters |
-|---|---|---|
-| 🏛️ **Clean Architecture** | Domain/UseCase/Infra layers | Easy testing & maintenance |
-| 🔄 **True Idempotency** | Request deduplication + result caching | API clients can retry safely |
-| 🔐 **JWT + RBAC** | Role-based access (viewer/operator/admin) | Production auth patterns |
+- Clean Architecture
+- True Idempotency
+JWT + RBAC
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 git clone <this-repo>
@@ -33,7 +31,7 @@ mise run migrate:up                    # Apply schema
 
 ---
 
-## 🗄️ Database Operations
+## Database Operations
 
 ### Migrations (Atlas-powered)
 ```bash
@@ -55,7 +53,7 @@ mise run sqlc:gen          # Regenerate type-safe DB code
 
 ---
 
-## 🛠️ Development Commands
+## Development Commands
 
 | Task | Command | Description |
 |------|---------|-------------|
@@ -87,7 +85,7 @@ mise run test-clean      # Clean test cache
 
 ---
 
-## 📡 API Highlights
+## API Highlights
 
 All endpoints require auth (except `/auth/login`). Uses `Idempotency-Key` header for safe retries.
 
@@ -111,7 +109,7 @@ Swagger docs: `http://localhost:8888/swagger/` (debug mode)
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 internal/
@@ -130,7 +128,7 @@ internal/
 
 ---
 
-## 🗂️ Project Context
+## Project Context
 
 Built for **booking/reservation systems** where race conditions and data consistency are critical. Includes real-world patterns like:
 
